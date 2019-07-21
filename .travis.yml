@@ -12,6 +12,6 @@ script:
 - poetry run pytest
 deploy:
   provider: script
-  script: bash docker_push.sh
+  script: bash deploy.sh
   on:
     branch: master
