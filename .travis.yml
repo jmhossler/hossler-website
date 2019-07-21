@@ -3,6 +3,7 @@ python:
 - 3.7
 before_install:
 - pip install poetry
+- bash get_kube_config.sh
 install:
 - poetry install
 script:
@@ -12,6 +13,5 @@ script:
 deploy:
   provider: script
   script: bash docker_push.sh
-  skip_leanup: true
   on:
     branch: master
