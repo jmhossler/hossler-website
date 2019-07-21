@@ -1,11 +1,20 @@
-from flask import Flask
+from flask import Flask, render_template
+from flask_bootstrap import Bootstrap
 
-app = Flask(__name__)
+
+def create_app():
+    app = Flask(__name__)
+    Bootstrap(app)
+    return app
+
+
+app = create_app()
 
 
 @app.route("/")
 def hello():
-    return "Hello World! I really hope this works"
+    title = "John's home"
+    return render_template("index.html", app_title=title)
 
 
 if __name__ == "__main__":
