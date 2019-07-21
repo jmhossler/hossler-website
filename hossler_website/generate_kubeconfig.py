@@ -2,8 +2,7 @@ import pkg_resources
 
 
 def generate_kubeconfig():
-    config = f"""
-apiVersion: apps/v1beta2
+    config = f"""apiVersion: apps/v1beta2
 kind: Deployment
 metadata:
   name: test-website
