@@ -10,7 +10,7 @@ of automated service deployment for profressional use.
 
 # Short-term Roadmap
 
-* Automatically deploy changes pushed to master to jmhossler.net when all tests pass
-* Publish coverage reports for tests
-* Create basic personal web page, including experience, hobbies, and projects
-* Document architecture and things learned during creation of website on website
+- [x] Automatically deploy changes pushed to master to jmhossler.net when all tests pass
+- [ ] Publish coverage reports for tests
+- [ ] Create basic personal web page, including experience, hobbies, and projects
+- [ ] Document architecture and things learned during creation of website on website
