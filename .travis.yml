@@ -3,13 +3,12 @@ python:
 - 3.7
 before_install:
 - pip install poetry
-- bash get_kube_config.sh
 install:
 - poetry install
 script:
-- make build-docker
 - poetry run black --check hossler_website tests
 - poetry run pytest
+- make build-docker
 deploy:
   provider: script
   script: bash deploy.sh

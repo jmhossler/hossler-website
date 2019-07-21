@@ -125,3 +125,7 @@ dmypy.json
 
 # kubeconfig
 app.yaml
+
+# binaries that are downloaded
+doctl
+kubectl
