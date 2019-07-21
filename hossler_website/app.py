@@ -14,7 +14,11 @@ app = create_app()
 @app.route("/")
 def hello():
     title = "John's home"
-    return render_template("index.html", app_title=title)
+    content = """
+Welcome to my simple website! I plan to use this as a playground to try new
+things. This webapp is deployed using kubernetes, travis-ci, flask, and bootstrap.
+"""
+    return render_template("index.html", app_title=title, content=content)
 
 
 if __name__ == "__main__":
