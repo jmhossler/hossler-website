@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "hossler-website"
+version = "0.1.0"
+description = ""
+authors = ["John Hossler <john.m.hossler@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+flask = "^1.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.0"
+black = {version = "^18.3-alpha.0",allows-prereleases = true}
+
+[tool.poetry.scripts]
+version = "hossler_website.__init__:show_version"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
